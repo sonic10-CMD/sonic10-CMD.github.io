@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用AI创造未来</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #4CAF50, #2196F3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold gradient-text">寒松AI进化</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-white transition">关于我</a>
+                    <a href="#works" class="text-gray-300 hover:text-white transition">作品</a>
+                    <a href="#progress" class="text-gray-300 hover:text-white transition">进展</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition">联系我</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://picsum.photos/1920/1080?random=1" alt="背景" class="w-full h-full object-cover opacity-30">
+        </div>
+        <div class="container mx-auto px-4 relative z-10 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text">用AI创造未来</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">探索AI的无限可能</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#works" class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full transition">查看作品</a>
+                <a href="#contact" class="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition">联系我</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">关于我</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <img src="https://picsum.photos/800/600?random=2" alt="个人照片" class="rounded-lg shadow-xl">
+                </div>
+                <div data-aos="fade-left" class="space-y-6">
+                    <h3 class="text-2xl font-bold">寒松AI进化</h3>
+                    <p class="text-gray-300">专注于AI技术的探索与应用，包括AI绘画、AI视频、AI编程和AI数字人等领域。致力于将前沿AI技术转化为实用解决方案。</p>
+                    <div class="flex space-x-4">
+                        <a href="https://okjk.co/GzvoHr" target="_blank" class="text-white hover:text-green-500 transition">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-green-500 transition">
+                            <i class="fab fa-weixin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section id="works" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">作品展示</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-6 rounded-xl" data-aos="zoom-in">
+                    <img src="https://picsum.photos/400/300?random=3" alt="AI绘画" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">AI绘画</h3>
+                    <p class="text-gray-400">探索AI艺术创作的无限可能</p>
+                </div>
+                <div class="card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://picsum.photos/400/300?random=4" alt="AI视频" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">AI视频</h3>
+                    <p class="text-gray-400">智能视频制作与处理</p>
+                </div>
+                <div class="card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://picsum.photos/400/300?random=5" alt="AI编程" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">AI编程</h3>
+                    <p class="text-gray-400">智能代码生成与优化</p>
+                </div>
+                <div class="card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://picsum.photos/400/300?random=6" alt="AI数字人" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-2">AI数字人</h3>
+                    <p class="text-gray-400">打造智能数字化分身</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 进展展示 -->
+    <section id="progress" class="py-20 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">项目进展</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6 rounded-xl" data-aos="fade-up">
+                    <h3 class="text-xl font-bold mb-4">AI绘画进展</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                            <span class="ml-4">90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4">AI编程进展</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                            <span class="ml-4">85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4">AI数字人进展</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                            <span class="ml-4">75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text" data-aos="fade-up">联系我</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6" data-aos="fade-right">
+                    <div class="card p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4">联系方式</h3>
+                        <div class="space-y-4">
+                            <p><i class="fab fa-weixin mr-2"></i> 微信：hansong478558</p>
+                            <p><i class="fas fa-video mr-2"></i> 视频号：寒松AI进化</p>
+                            <p><i class="fab fa-github mr-2"></i> Github：<a href="https://okjk.co/GzvoHr" target="_blank" class="text-green-500 hover:underline">访问主页</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://picsum.photos/800/600?random=7" alt="联系背景" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-black py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2024 寒松AI进化. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化 AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
